@@ -1,0 +1,511 @@
+html, body{
+    background-color: white;
+    color: black;
+    font-family: 'Lato', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ヘッダー */
+.header {
+    padding-top: 100px;
+}
+.header-fixed {
+
+}
+
+.header-fixed h1{
+    text-align: left;
+    margin-left: 50px;
+    margin-bottom: 40px;
+    font-size: 40px;
+    letter-spacing: 10px;
+}
+
+.nav-btn {
+    display: none;
+}
+
+/* ハンバーガーメニュー */
+.menu-trigger {
+    position: fixed;
+    top: 3%;
+    right: 4%;
+    height: 38px;
+    width: 35px;
+    cursor: pointer;
+    z-index: 200;
+    transition: opacity 0.25s ease;
+}
+
+.menu-trigger:hover {
+    opacity: 0.4;
+  }
+  
+  .menu-trigger.active .top {
+    transform: translateY(11px) translateX(0) rotate(45deg);
+    background: mediumblue;
+  }
+  .menu-trigger.active .middle {
+    opacity: 0;
+    background: mediumblue;
+  }
+  .menu-trigger.active .bottom {
+    /* transform: translateY(-11px) translateX(0) rotate(-45deg); */
+    background: mediumblue;
+  }
+  
+  .menu-trigger span {
+    background: mediumblue;
+    border: none;
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.35s ease;
+  
+  }
+  .menu-trigger span:nth-of-type(2) {
+    top: 11px;
+  }
+  .menu-trigger span:nth-of-type(3) {
+    top: 22px;
+  }
+
+.nav-btn {
+
+}
+
+.nav {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 0.1em;
+}
+
+
+.nav-wrap {
+    
+}
+
+
+
+.nav-list li {
+    font-size: 16px;
+    padding: 0 25px;
+    letter-spacing: 5px;
+}
+
+.nav-list li:hover {
+    text-decoration: underline;
+}
+
+.item:nth-child(n+2) {
+    padding-top: 20px;
+}
+
+
+/* トップ画像 */
+.top {
+    background-image: url(/image/top2.png);
+    background-position: center;
+    background-size: cover;
+    height: 674px;
+    position: relative;
+    /* ヘッダー分の余白を開ける↓ */
+    margin-top: 20px;
+}
+.top-title {
+    /* color: rgb(148, 91, 91); */
+    /* 画像の中央寄せ↓ */
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%); */
+    /* ここでヘッダーが消えたため、コンテンツの重なりを指定するコードをheader.scssに記載 */
+    /* text-align: center;
+    font-size: 35px;
+    width: 100%; */
+}
+
+
+/* 自己紹介 */
+.main-content {
+
+}
+
+.cmn-title {
+    padding: 100px 0 60px 0;
+}
+
+.main {
+    font-size: 40px;
+    padding-top: 50px;
+    color: #333333;
+    text-shadow:4px 3px 2px gray;
+    letter-spacing: 10px;
+    font-weight: 100;
+}
+
+.contents p{
+    /* margin-top: 30px; */
+}
+
+.myphoto img{
+    width: 350px;
+}
+
+.about-text {
+    font-size: 18px;
+    /* padding-left: 80px; */
+    padding-top: 30px;
+    text-align: center;
+}
+
+.about-text p{
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+
+.fa-twitter {
+    padding-right: 10px;
+}
+
+.about-text a:hover{
+    opacity: 1;
+    color: blue;
+    text-decoration: underline;
+}
+
+.about-text a:{
+    opacity: 0.6;
+}
+
+.main-text {
+    font-size: 16px;
+    padding-top: 40px;
+}
+
+
+
+/* スキル */
+.skill {
+    margin: 0 auto;
+    padding: 30px 0 60px 0;
+}
+
+.skill p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.skill-type {
+    /* padding-top: 50px; */
+}
+
+
+.skill-list {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.skill-item {
+
+}
+
+.skill-item img{
+    /* width: 100%;
+    height: auto;
+    cursor: pointer; */
+}
+
+.skill-item img:hover{
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+    transform: translateY(-5px);
+    transition-duration: 0.5s;
+}
+
+.skill-item p{
+    margin-top: 10px;
+}
+
+.skill-icon {
+    background-color: silver;
+    height: 310px;
+    width: 300px;
+    display: inline-block;
+    transition-duration: 0.5s;
+    border: none;
+    margin: 0 10px 0 10px;
+}
+
+.skill-icon img{
+    width: 80%;
+    height: 80%;
+    margin-top: 10px;
+}
+
+
+/* 実績 */
+.work {
+
+}
+
+.inner {
+    font-size: 20px;
+    padding-bottom: 60px;
+}
+
+.work-cont {
+    text-align: center;
+}
+
+.work-cont img{
+    width: 90%;
+    height: 90%;
+    margin: 2% 2%;
+    border: solid 1px #ccc;
+}
+
+.work-item {
+    font-size: 16px;
+}
+
+.work-item:nth-child(n+2) {
+    margin-top: 20px;
+}
+
+
+.img-link:hover{
+    opacity: 0.5;
+}
+
+
+
+/* サービス */
+.service {
+
+}
+
+.service-item {
+    margin: 0 auto;
+}
+
+.service-item:nth-child(n+2) {
+    margin-top: 50px;
+}
+
+.sub {
+    opacity: 0.6;
+    margin-top: 10px;
+}
+
+.service-item h1{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.service-item i{
+    padding: 30px 0 40px 0;
+    width: 100%;
+}
+
+.service-text {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 16px;
+    letter-spacing: 1px;
+
+}
+
+.service-text p {
+    line-height: 30px;
+}
+
+.attention {
+    font-size: 18px;
+    margin-top: 60px;
+}
+
+/* 連絡先 */
+.contact {
+
+}
+
+.contact-btn {
+    margin-top: 10px;
+}
+
+.contact-means{
+    text-align: center;
+    /* font-size: 20px; */
+    padding-top: 20px;
+}
+
+.contact-group{
+    padding-top: 20px;
+}
+
+.contact-group .fas{
+    margin-right: 20px;
+}
+
+.contact-group a{
+    margin-left: 30px;
+}
+
+.contact-group a:hover{
+    opacity: 0.7;
+    color: royalblue;
+}
+
+.contact-btn {
+    text-decoration: none;
+    background-color:brown;
+    border-radius: 4px;
+    width: 130px;
+    height: 40px;
+    cursor: pointer;
+
+}
+.contact-btn:hover {
+opacity: 0.8;
+text-decoration: underline;
+color: white;
+}
+.contact-means {
+    padding-top: 40px;
+}
+
+/* フッター */
+footer {
+    padding-top: 60px;
+}
+
+footer p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border-top: 1px solid gray;
+}
+
+footer .nav-list {
+    justify-content: flex-start;
+    padding-left: 20px;
+    padding-bottom: 40px;
+}
+
+/* PC用 */
+@media only screen and (max-width: 767px) {
+    .nav{
+        position: static;
+    }
+    
+
+}
+
+/* PC用 */
+@media print,screen and (min-width: 768px) {
+    a {
+        font-size: 16px;
+    }
+    .header-fixed h1{
+        margin-bottom: 0;
+    }
+    .nav {
+        position: static;
+        width: initial;
+        background-color: transparent;
+    }
+    .nav-list {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 50px;
+    }
+    .item:nth-child(n+2){
+        padding-top: 0;
+    }
+    /* トップ画像 */
+    .top {
+        background-image: url(/image/top3.png);
+        background-position: center;
+        background-size: cover;
+        height: 674px;
+        position: relative;
+        /* ヘッダー分の余白を開ける↓ */
+        margin-top: 20px;
+    }
+
+    /* 自己紹介 */
+    .contents {
+        display: flex;
+        justify-content: center;
+    }
+    .about-cont {
+        display: flex;
+        align-items: center;
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+    .about-text {
+        padding-left: 80px;
+    }
+    /* スキル */
+    .skill-list {
+        margin-left: 30px;
+        margin-right: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    .skill-icon {
+        background-color: blanchedalmond;
+        height: 180px;
+        width: 180px;
+        display: inline-block;
+        transition-duration: 0.5s;
+        border: none;
+        margin: 0 10px 0 10px;
+    }
+    /* 実績 */
+    .work-cont {
+        display: flex;
+        justify-content: center;
+        padding-top: 40px;
+        /* flex-wrap: wrap; */
+    }
+    .work-item:nth-child(n+2) {
+        margin-top: 0;
+    }
+    /* サービス */
+    .service-item {
+        width: 100%;
+    }
+
+    .service-item:nth-child(n+2) {
+        margin-top: 0;
+    }
+/* フッター */
+footer {
+    padding-top: 30px;
+}
+
+}
